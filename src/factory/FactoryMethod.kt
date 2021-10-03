@@ -1,3 +1,10 @@
+package factory
+
+import Circle
+import Rectangle
+import Shape
+import Triangle
+
 /**
  * Creates objects of the same interface within a single method
  */
@@ -17,25 +24,5 @@ class ShapeFactory {
             "circle"->Circle()
             else->null
         }
-    }
-}
-
-interface Shape {
-    fun draw()
-}
-
-class Rectangle : Shape {
-    override fun draw() {
-        println("Drawing rectangle...")
-    }
-}
-class Triangle : Shape {
-    override fun draw() {
-        println("Drawing triangle...")
-    }
-}
-class Circle : Shape {
-    override fun draw() {
-        println("Drawing circle...")
     }
 }
